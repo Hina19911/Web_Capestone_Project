@@ -1,15 +1,17 @@
 import React from 'react';
+import AcceptTask from './AcceptTask';
 
-const TaskList = () => {
+const TaskList = ({data}) => {
   return (
     // 📦 Main container for the horizontal scrolling task list
     <div
       id="tasklist"
       className="h-[50%] overflow-auto flex items-center justify-start gap-5 w-full flex-nowrap mt-10"
     >
+    
       {/* Each task card is fixed width*/}
       <div className="h-full w-[300px] bg-amber-400 rounded-xl shrink-0 p-5">
-        
+      <AcceptTask />
         {/* 🏷 Top row: Priority badge + Date */}
         <div className="flex justify-between items-center">
           {/* Priority tag */}
